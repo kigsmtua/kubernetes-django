@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: frontend
+  labels:
+    name: frontend
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        name: frontend
+    spec:
+      containers:
+      - name: k8sapp
+        image: kigsmtua/kubernetes-django
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8000
