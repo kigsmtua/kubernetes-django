@@ -1,6 +1,6 @@
 # kubernetes-django
-Deploying a django app with mysql to digital-ocean kubernetes 
-Ansible is used as the ocherstration tool
+> Deploying a django app with mysql to digital-ocean kubernetes 
+> Ansible is used as the ocherstration tool
 
 # Components
 > 1. We deploy a django a dummy django app
